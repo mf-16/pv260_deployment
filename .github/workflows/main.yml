@@ -1,4 +1,4 @@
-name: Deploy Demo.BlazorWasmApp to GitHub Pages
+name: Build, Test, and Deploy Blazor App
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,13 +23,18 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Restore Blazor project dependencies
+      - name: Restore Blazor app dependencies
         run: dotnet restore Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj
 
-      - name: Build Blazor project
+      - name: Build Blazor app
         run: dotnet build Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj --configuration Release --no-restore
 
-      - name: Publish Blazor project
+      - name: Run Tests
+        run: |
+          dotnet restore Demo.BlazorWasmApp.Tests/Demo.BlazorWasmApp.Tests.csproj
+          dotnet test Demo.BlazorWasmApp.Tests/Demo.BlazorWasmApp.Tests.csproj --no-restore --verbosity normal
+
+      - name: Publish Blazor app
         run: dotnet publish Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj -c Release -o publish
 
       - name: Upload Pages artifact
@@ -38,7 +43,7 @@ jobs:
           path: publish/wwwroot
 
   deploy:
-    needs: build
+    needs: build-and-test
     runs-on: ubuntu-latest
 
     environment:
