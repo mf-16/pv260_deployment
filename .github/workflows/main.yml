@@ -23,14 +23,14 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Restore dependencies
-        run: dotnet restore
+      - name: Restore Blazor project dependencies
+        run: dotnet restore Demo.BlazorWasmApp.Playground/Demo.BlazorWasmApp.Playground.csproj
 
-      - name: Build project
-        run: dotnet build --configuration Release --no-restore
+      - name: Build Blazor project
+        run: dotnet build Demo.BlazorWasmApp.Playground/Demo.BlazorWasmApp.Playground.csproj --configuration Release --no-restore
 
-      - name: Publish Blazor app
-        run: dotnet publish -c Release -o publish
+      - name: Publish Blazor project
+        run: dotnet publish Demo.BlazorWasmApp.Playground/Demo.BlazorWasmApp.Playground.csproj -c Release -o publish
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
