@@ -1,4 +1,4 @@
-name: Deploy Blazor to GitHub Pages
+name: Deploy Demo.BlazorWasmApp to GitHub Pages
 
 on:
   push:
@@ -24,13 +24,13 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restore Blazor project dependencies
-        run: dotnet restore Demo.BlazorWasmApp.Playground/Demo.BlazorWasmApp.Playground.csproj
+        run: dotnet restore Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj
 
       - name: Build Blazor project
-        run: dotnet build Demo.BlazorWasmApp.Playground/Demo.BlazorWasmApp.Playground.csproj --configuration Release --no-restore
+        run: dotnet build Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj --configuration Release --no-restore
 
       - name: Publish Blazor project
-        run: dotnet publish Demo.BlazorWasmApp.Playground/Demo.BlazorWasmApp.Playground.csproj -c Release -o publish
+        run: dotnet publish Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj -c Release -o publish
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
