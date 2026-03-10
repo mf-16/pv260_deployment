@@ -1,0 +1,217 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp.Tests/Demo.BlazorWasmApp.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp.Tests/Demo.BlazorWasmApp.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp.Tests/Demo.BlazorWasmApp.Tests.csproj",
+        "projectName": "Demo.BlazorWasmApp.Tests",
+        "projectPath": "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp.Tests/Demo.BlazorWasmApp.Tests.csproj",
+        "packagesPath": "/home/mf16/.nuget/packages/",
+        "outputPath": "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mf16/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj": {
+                "projectPath": "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[18.3.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            },
+            "bunit": {
+              "target": "Package",
+              "version": "[2.6.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[10.0.3, 10.0.3]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj",
+        "projectName": "Demo.BlazorWasmApp",
+        "projectPath": "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp/Demo.BlazorWasmApp.csproj",
+        "packagesPath": "/home/mf16/.nuget/packages/",
+        "outputPath": "/home/mf16/muni/4th_semester/pv260/PV260.Deployment-main/Demo.BlazorWasmApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mf16/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.App.Internal.Assets": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.3, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.DotNet.HotReload.WebAssembly.Browser": {
+              "target": "Package",
+              "version": "[10.0.103, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.3, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[10.0.3, 10.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[10.0.3, 10.0.3]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
